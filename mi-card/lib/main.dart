@@ -12,23 +12,29 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Container(
-                height: 100,
-                color: Colors.white,
-                child: Text('Container 1'),
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/paulo.jpg'),
               ),
-              Container(
-                height: 100,
-                color: Colors.blue,
-                child: Text('Container 2'),
+              Text(
+                'Paulo Filho',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-              Container(
-                height: 100,
-                color: Colors.red,
-                child: Text('Container 3'),
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  fontSize: 20.0,
+                  letterSpacing: 2.5,
+                  color: Colors.teal.shade100,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ],
           ),
