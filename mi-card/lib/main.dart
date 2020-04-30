@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.deepPurpleAccent,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -28,20 +28,20 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'FLUTTER DEVELOPER',
+                'SOFTWARE ENGINEER',
                 style: TextStyle(
                   fontFamily: 'Source Sans Pro',
                   fontSize: 20.0,
                   letterSpacing: 2.5,
-                  color: Colors.teal.shade100,
+                  color: Colors.indigo.shade100,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               SizedBox(
                 height: 20,
-                width: 150,
+                width: 200,
                 child: Divider(
-                  color: Colors.teal.shade100,
+                  color: Colors.indigo.shade100,
                 ),
               ),
               Card(
@@ -52,12 +52,12 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
-                    color: Colors.teal,
+                    color: Colors.deepPurpleAccent.shade700,
                   ),
                   title: Text(
                     '+44 123 456 789',
                     style: TextStyle(
-                      color: Colors.teal.shade900,
+                      color: Colors.deepPurpleAccent,
                       fontFamily: 'Source Sans Pro',
                       fontSize: 20,
                     ),
@@ -72,12 +72,12 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
-                    color: Colors.teal,
+                    color: Colors.deepPurpleAccent.shade700,
                   ),
                   title: Text(
                     'paulo@gmail.com',
                     style: TextStyle(
-                      color: Colors.teal.shade900,
+                      color: Colors.deepPurpleAccent,
                       fontFamily: 'Source Sans Pro',
                       fontSize: 20,
                     ),
