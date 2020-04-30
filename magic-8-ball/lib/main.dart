@@ -15,16 +15,21 @@ class Ball extends StatefulWidget {
 class _BallState extends State<Ball> {
   int ballNumber = 1;
 
+  void setM8Number() {
+    setState(() {
+      ballNumber = Random().nextInt(5) + 1;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Center(
       child: FlatButton(
         child: Image.asset('images/ball$ballNumber.png'),
         onPressed: () {
-          setState(() {
-            ballNumber = Random().nextInt(5) + 1;
-          });
+          setM8Number();
         },
+        highlightColor: Colors.transparent,
       ),
     );
   }
@@ -34,9 +39,9 @@ class BallPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.green,
       appBar: AppBar(
-        backgroundColor: Colors.blue.shade900,
+        backgroundColor: Colors.green.shade900,
         title: Text('Ask Me Anything'),
       ),
       body: Ball(),
