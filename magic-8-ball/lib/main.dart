@@ -19,10 +19,11 @@ class _BallState extends State<Ball> {
   Widget build(BuildContext context) {
     return Center(
       child: FlatButton(
-        child: Image.asset('images/ball1.png'),
+        child: Image.asset('images/ball$ballNumber.png'),
         onPressed: () {
-          ballNumber = Random().nextInt(5);
-          print('Ball number: $ballNumber');
+          setState(() {
+            ballNumber = Random().nextInt(5) + 1;
+          });
         },
       ),
     );
